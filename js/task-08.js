@@ -13,5 +13,7 @@ function formSubmit(e) {
   } else {
     obj.email = email.value;
     obj.password = password.value;
+    console.log(obj);
   }
+  e.currentTarget.reset();
 }
