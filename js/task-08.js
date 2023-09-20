@@ -9,11 +9,12 @@ function formSubmit(e) {
   const { email, password } = e.currentTarget.elements;
 
   if (email.value === "" || password.value === "") {
-    alert(`Fields are not filled`);
-  } else {
+    alert(`Fields are not filled`)
+    return
+  } 
     obj.email = email.value;
     obj.password = password.value;
     console.log(obj);
-  }
+  
   e.currentTarget.reset();
 }
